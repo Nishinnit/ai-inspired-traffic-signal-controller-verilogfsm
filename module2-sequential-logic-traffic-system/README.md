@@ -111,7 +111,8 @@ Each module has its own testbench (`traffic_counter_tb.v`, `mod10_counter_tb.v`,
 
 ## How to Simulate (ModelSim/QuestaSim)
 
-Example for the full system:
-vlog traffic_counter.v mod10_counter.v traffic_light_ctrl.v traffic_system_top.v traffic_system_top_tb.v
-vsim traffic_system_top_tb
+```
+ vlog traffic_counter.v mod10_counter.v traffic_light_ctrl.v traffic_system_top.v traffic_system_top_tb.v
+sim traffic_system_top_tb
 run -all
+```
